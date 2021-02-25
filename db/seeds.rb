@@ -8,3 +8,6 @@
 
 actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 actor.save
+require: "ffaker"
+actor = Actor.new({first_name: ffaker::Name.first_name, last_name: ffaker::Name.last_name, known_for: ffaker::Movie.title})
+actor.save
