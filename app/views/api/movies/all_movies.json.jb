@@ -1,0 +1,10 @@
+
+  @all_movies.map do |movies|
+   
+ {
+      id: movies.id,
+    title: movies.title,
+    year: movies.year,
+    plot: movies.plot,
+ }
+end

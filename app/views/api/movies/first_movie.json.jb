@@ -1,4 +1,6 @@
 {
-  first_movie: @first_movie,
+  title: @first_movie.title,
+  year: @first_movie.year,
+  plot: @first_movie.plot
  
 }
