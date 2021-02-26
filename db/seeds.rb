@@ -9,5 +9,5 @@
 actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 actor.save
 require: "ffaker"
-actor = Actor.new({first_name: ffaker::Name.first_name, last_name: ffaker::Name.last_name, known_for: ffaker::Movie.title})
-actor.save
+movie = Movie.new({title: "The Conjuring", year: 2013, plot: "When the Perron family movies into a new house, they quickly start experiencing paranormal happenings. Things keep getting worse, so mom Carolyn reaches out to Ed and Lorraine Warren, world renound paranormal investigators and demonologists. With the Warren's help, they discover that the entity in their house is evil, and set to work saving the family."})
+movie.save
