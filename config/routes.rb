@@ -10,5 +10,8 @@ Rails.application.routes.draw do
 
     get "/all_movies_path" => "movies#all_movies_action"
     get "/1994_movies_path" => "movies#ninefour_movies"
+    get "single_actor_path" => "actors#single_actor"
+    get "single_actor_path/:id" => "actors#single_actor"
+    post "single_actor_path" => "actors#single_actor"
   end
 end
