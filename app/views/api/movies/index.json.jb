@@ -1,5 +1,5 @@
 
-  @all_movies.map do |movies|
+  @movies.map do |movies|
    
  {
       id: movies.id,
