@@ -1,6 +1,5 @@
 
   @movies.map do |movies|
-   if movies.english = true
  {
       id: movies.id,
     title: movies.title,
@@ -9,5 +8,4 @@
     director: movies.director,
     english: movies.english,
  }
-end
 end

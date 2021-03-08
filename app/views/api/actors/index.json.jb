@@ -11,4 +11,3 @@
     }
    end
    
-  p @actors.sort_by {  |item| item[:age]}
