@@ -20,11 +20,11 @@ class Api::ActorsController < ApplicationController
     @actor.age = params[:age]
     @actor.movie_id = params[:movie_id]
     
-    if @actor.save
+    # if @actor.save
       render "show.json.jb"
-    else 
-      render json: {errors: @actor.errors.full_messages}, status: 406
-    end
+    # else 
+    #   render json: {errors: @actor.errors.full_messages}, status: 406
+    # end
   end
 
   def update
@@ -36,11 +36,11 @@ class Api::ActorsController < ApplicationController
     @actor.age = params[:age] || @actor.age = @actor.age
     @actor.movie_id = params[:movie_id] || @actor.movie_id = @actor.movie_id
     
-    if @actor.save
+    # if @actor.save
       render "show.json.jb"
-    else 
-      render json: {errors: @actor.errors.full_messages}, status: 406
-    end
+    # else 
+    #   render json: {errors: @actor.errors.full_messages}, status: 406
+    # end
   end
 
   def destroy
@@ -48,6 +48,8 @@ class Api::ActorsController < ApplicationController
     @actor.delete
     render json: "Successfully Deleted!"
   end
+
+
 
 
 
