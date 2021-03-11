@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-actor = Actor.create!({first_name: "Leonardo", last_name: "Dicaprio", known_for: "Titanic", gender: "male", age: 46})
+# actor = Actor.create!({first_name: "Leonardo", last_name: "Dicaprio", known_for: "Titanic", gender: "male", age: 46})
 
-movie = Movie.create!({title: "The Conjuring", year: 2013, plot: "When the Perron family movies into a new house, they quickly start experiencing paranormal happenings. Things keep getting worse, so mom Carolyn reaches out to Ed and Lorraine Warren, world renound paranormal investigators and demonologists. With the Warren's help, they discover that the entity in their house is evil, and set to work saving the family."})
+# movie = Movie.create!({title: "The Conjuring", year: 2013, plot: "When the Perron family movies into a new house, they quickly start experiencing paranormal happenings. Things keep getting worse, so mom Carolyn reaches out to Ed and Lorraine Warren, world renound paranormal investigators and demonologists. With the Warren's help, they discover that the entity in their house is evil, and set to work saving the family."})
+
+user = User.create(name: "nemo", email: "nemo@gmail.com", password: "chicken", password_confirmation: "chicken")
