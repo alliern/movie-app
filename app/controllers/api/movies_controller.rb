@@ -1,5 +1,6 @@
 
 class Api::MoviesController < ApplicationController
+  before_action :authenticate_admin, except: [:index, :show]
 
   def index
     @movies = Movie.where(english: true)
@@ -16,12 +17,14 @@ class Api::MoviesController < ApplicationController
     @movie.title = params[:title]
     @movie.year = params[:year]
     @movie.plot = params[:plot]
+    @movie.director = params[:director] 
+    @movie.english = params[:english]=
     
-    # if @movie.save
+    if @movie.save
       render "show.json.jb"
-    # else 
-    #   render json: {errors: @movie.errors.full_messages}, status: 406
-    # end
+    else 
+      render json: {errors: @movie.errors.full_messages}, status: 406
+    end
   end
 
   def update
