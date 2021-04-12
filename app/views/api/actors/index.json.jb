@@ -1,5 +1,5 @@
 
   @actors.map do |actor|
-    render partial: "actor.json.jb", locals: {a tor: actor}
+    render partial: "actor.json.jb", locals: {actor: actor}
  end
    
